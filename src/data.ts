@@ -11,7 +11,7 @@ export const sample_food: Food[] = [
     favorite: false,
     origins: ['Italia'],
     stars: 3.0,
-    imageUrl: 'assets/p1.jpg',
+    imageUrl: 'assets/1.jpg',
     tags: ['Pizza', 'Massa']
   },
   {
@@ -22,7 +22,19 @@ export const sample_food: Food[] = [
     favorite: true,
     origins: ['Italia'],
     stars: 3.5,
-    imageUrl: 'assets/p2.jpg',
+    imageUrl: 'assets/2.jpg',
     tags: ['Lasanha', 'Massa']
-  }
+  },
+  {
+    id: '3',
+    name: 'Sopa',
+    price: 10,
+    cookTime: '40min',
+    favorite: false,
+    origins: ['Grecia'],
+    stars: 2.0,
+    imageUrl: 'assets/3.jpg',
+    tags: ['Sopa', 'Grecia']
+  },
+
 ]
