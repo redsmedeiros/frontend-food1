@@ -1,0 +1,65 @@
+header{
+  position: relative; /*voce pode alterar a posição do elemento */
+  background-color: white;
+  padding: 0;
+  border-bottom: 1px solid #e72929;
+}
+
+a{
+  color: #e72929;
+}
+
+a:hover{
+  background-color: #e72929;
+  color: white;
+  cursor: pointer;
+}
+
+.container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo{
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul a{
+  padding: 1rem;
+  display: inline-block; /* coloca um elemento do lado do outro */
+}
+
+a span{
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+}
+
+.menu-container{
+  position: relative; /* possivel alterar a posição */
+
+}
+
+.menu{
+  position: absolute; /*sobrepoe outros elementos */
+  z-index: 1; /*vai tratar a sobreposição deixando o elemento em evidencia */
+  display: none; /* nao mostra o elemento */
+}
+
+.menu-container:hover .menu{
+  display: block; /* mostrar o elemento */
+}
+
+.menu{
+  width: 100%;
+  min-width: 8rem;
+}
