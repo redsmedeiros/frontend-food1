@@ -14,4 +14,10 @@ export class FoodService {
 
     return sample_food
   }
+
+  //metodo retorna um array de objetos foods filtrado pelo nome que inclui o termo de busca
+  getAllFoodsBySearchTerm(searchTerm: string): Food[]{
+
+    return  this.getAll().filter(food => food.name.toLocaleLowerCase().includes(searchTerm.toLowerCase()))
+  }
 }
