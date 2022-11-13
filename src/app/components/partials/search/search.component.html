@@ -1,0 +1,7 @@
+<div>
+  <!--Criar varivel local, passar o valor da variavel na função. Variavel local pode ser acessada em todo html-->
+  <input #s type="text" placeholder="Buscar Comida" (keyup.enter)="search(s.value)"
+  [value]="searchTerm"
+  /> <!--usar o bind value para preencher o atributo-->
+  <button class="btn" (click)="search(s.value)">Buscar</button>
+</div>
