@@ -1,4 +1,5 @@
 import { Food } from "./app/shared/models/Food";
+import { Tag } from "./app/shared/models/Tag";
 
 //exportar o array com obejtos do tipo food
 
@@ -37,4 +38,11 @@ export const sample_food: Food[] = [
     tags: ['Sopa', 'Grecia']
   },
 
+]
+
+
+export const sample_tags: Tag[] = [
+  {name: 'All', count:2},
+  {name: 'Pizza', count:1},
+  {name: 'Sopa', count:1}
 ]
